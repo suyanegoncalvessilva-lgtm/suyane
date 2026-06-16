@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Milho à Música</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        background:#f2f7f3;
+        color:#333;
+    }
+
+    /* TOPO */
+    header{
+        background: linear-gradient(135deg, #2e8b57, #3cb371);
+        color:white;
+        text-align:center;
+        padding:50px 20px;
+    }
+
+    header h1{
+        margin:0;
+        font-size:36px;
+    }
+
+    header p{
+        font-size:18px;
+        margin-top:10px;
+    }
+
+    /* MENU */
+    nav{
+        background:#1f5e3b;
+        text-align:center;
+        padding:10px;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        margin:0 15px;
+        font-weight:bold;
+    }
+
+    nav a:hover{
+        text-decoration:underline;
+    }
+
+    /* CONTEÚDO */
+    .container{
+        max-width:900px;
+        margin:auto;
+        padding:20px;
+    }
+
+    .card{
+        background:white;
+        margin:20px 0;
+        padding:20px;
+        border-radius:12px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h2{
+        color:#2e8b57;
+    }
+
+    /* BOTÃO */
+    .btn{
+        display:inline-block;
+        padding:12px 20px;
+        background:#f4a340;
+        color:black;
+        font-weight:bold;
+        border-radius:8px;
+        text-decoration:none;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#e08b20;
+    }
+
+    /* SEÇÃO OCULTA */
+    #extra{
+        display:none;
+        margin-top:15px;
+        padding:15px;
+        background:#eaf7ee;
+        border-left:5px solid #2e8b57;
+    }
+
+    /* RODAPÉ */
+    footer{
+        background:#2e8b57;
+        color:white;
+        text-align:center;
+        padding:15px;
+        margin-top:30px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌽 Do Milho à Música 🎶</h1>
+    <p>Transformando o milho em bioplástico e instrumentos sustentáveis</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#ideia">Ideia</a>
+    <a href="#musica">Música</a>
+</nav>
+
+<div class="container">
+
+    <!-- SOBRE -->
+    <div class="card" id="sobre">
+        <h2>🌱 Sobre o projeto</h2>
+        <p>
+            Este projeto mostra como o milho pode ser transformado em bioplástico sustentável,
+            reduzindo o impacto ambiental e incentivando o reaproveitamento de materiais naturais.
+        </p>
+    </div>
+
+    <!-- IDEIA -->
+    <div class="card" id="ideia">
+        <h2>🧪 Como funciona</h2>
+        <p>
+            O amido do milho é utilizado para criar um bioplástico simples, que pode ser moldado
+            e reutilizado em diferentes formas criativas.
+        </p>
+
+        <button class="btn" onclick="mostrar()">CLIQUE PARA VER MAIS</button>
+
+        <div id="extra">
+            <p>
+                🌽 Ingredientes do bioplástico:<br>
+                - Amido de milho<br>
+                - Água<br>
+                - Vinagre<br>
+                - Glicerina<br><br>
+
+                ♻️ Esse material pode substituir plásticos comuns em pequenas aplicações.
+            </p>
+        </div>
+    </div>
+
+    <!-- MÚSICA -->
+    <div class="card" id="musica">
+        <h2>🎶 Do bioplástico à música</h2>
+        <p>
+            Com o material produzido, é possível criar instrumentos simples como chocalhos,
+            tambores e objetos sonoros educativos.
+        </p>
+
+        <p>
+            🌱 Isso une sustentabilidade, ciência e criatividade.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 - Projeto Agrinho | Desenvolvido por Suyane
+</footer>
+
+<script>
+function mostrar(){
+    let extra = document.getElementById("extra");
+    if(extra.style.display === "block"){
+        extra.style.display = "none";
+    } else {
+        extra.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
